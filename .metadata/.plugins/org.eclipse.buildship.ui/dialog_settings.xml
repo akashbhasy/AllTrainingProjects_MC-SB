@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.buildship.ui.wizard.project.creation">
+		<item key="project_location" value="C:\Users\ustjava16\Documents\workspace-spring-tool-suite-4-4.2.0.RELEASE\adasd"/>
+		<item key="use_default_location" value="true"/>
+	</section>
+	<section name="org.eclipse.buildship.ui.wizard.project.import">
+		<item key="project_location" value="D:\UstTest\tennis-courts-v1"/>
+		<item key="apply_working_sets" value="true"/>
+		<item key="gradle_distribution" value="GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(D:\Tools\gradle-6.0))"/>
+		<item key="gradle_user_home" value="D:\Tools\gradle-6.0\bin"/>
+		<list key="working_sets">
+		</list>
+	</section>
+</section>

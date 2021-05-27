@@ -1,0 +1,138 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "CRUD operations on product",
+        "version": "1.0",
+        "title": "Product App Info",
+        "termsOfService": "license",
+        "contact": {
+            "name": "Tufail Ahmed",
+            "url": "http://www.tufailahmed.com",
+            "email": "tufailahmedkhan@gmail.com"
+        },
+        "license": {
+            "name": "API Licence",
+            "url": "http://www.tufailahmed.com"
+        }
+    },
+    "host": "localhost:8898",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "product-controller",
+            "description": "Product Controller"
+        }
+    ],
+    "paths": {
+        "/product/{productId}": {
+            "get": {
+                "tags": [
+                    "product-controller"
+                ],
+                "summary": "getsingleProduct",
+                "operationId": "getsingleProductUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "parameters": [
+                    {
+                        "name": "productId",
+                        "in": "path",
+                        "description": "productId",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Product"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "product-controller"
+                ],
+                "summary": "deleteProduct",
+                "operationId": "deleteProductUsingDELETE",
+                "produces": [
+                    "*/*"
+                ],
+                "parameters": [
+                    {
+                        "name": "productId",
+                        "in": "path",
+                        "description": "productId",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Product": {
+            "type": "object",
+            "required": [
+                "price",
+                "productId",
+                "productName",
+                "quantityOnHand"
+            ],
+            "properties": {
+                "price": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "price of product"
+                },
+                "productId": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "id of product"
+                },
+                "productName": {
+                    "type": "string",
+                    "description": "name of product"
+                },
+                "quantityOnHand": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "quantity of product"
+                }
+            },
+            "title": "Product",
+            "description": "product model in appp"
+        }
+    }
+}

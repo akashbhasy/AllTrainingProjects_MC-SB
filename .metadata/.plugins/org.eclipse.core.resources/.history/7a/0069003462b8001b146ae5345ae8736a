@@ -1,0 +1,7 @@
+package com.ust.openid;
+
+import org.springframework.context.ApplicationContextInitializer;
+
+public class YamlLoaderInitializer implements ApplicationContextInitializer<C> {
+
+}

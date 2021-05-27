@@ -1,0 +1,5 @@
+projectKey=productapp
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/productapp
+ceTaskId=AXmiQg_zN31p3alDzl0V
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXmiQg_zN31p3alDzl0V

@@ -1,0 +1,11 @@
+spring:
+ profiles:
+  include: native,default
+ cloud:  config:   discovery:
+    enabled: false
+   server:
+    native:
+     searchLocations: D:\Akash\config
+    encrypt:           enabled: true
+server:
+ port: 8888        

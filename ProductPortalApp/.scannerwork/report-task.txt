@@ -1,0 +1,6 @@
+projectKey=productportal
+serverUrl=http://localhost:9000
+serverVersion=6.6.0.32724
+dashboardUrl=http://localhost:9000/dashboard/index/productportal
+ceTaskId=AXmdTp246-DqMuGPf6sv
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXmdTp246-DqMuGPf6sv

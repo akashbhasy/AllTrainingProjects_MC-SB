@@ -1,0 +1,12 @@
+Spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          custom-google:
+            client-id: 693721436730-9e3io38eu40h5t0top3nh8c952pp8g7v.apps.googleusercontent.com
+            client-secret: aN3wJf3sP0NDLqdocClOwRY5
+        provider:
+          custom-google:
+            issuer-uri: https://accounts.google.com
+                

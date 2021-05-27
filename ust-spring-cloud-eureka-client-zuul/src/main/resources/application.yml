@@ -1,0 +1,13 @@
+server:
+ port: 9092
+spring:  application:    name: USTEurekaZuul
+zuul:
+ routes:
+  demo:
+   path: /demo
+   service-id: UstEurekaClient
+   strip-prefix: false  
+  demo1:
+   path: /product
+   service-id: productApp
+   strip-prefix: false              

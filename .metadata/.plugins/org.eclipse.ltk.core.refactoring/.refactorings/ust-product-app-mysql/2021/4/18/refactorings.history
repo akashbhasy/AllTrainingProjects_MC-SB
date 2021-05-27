@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;ust-sprimg-mvc-product-mysql/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;ust-product-app-mysql&apos;&#x0D;&#x0A;- Destination element: &apos;ust-sprimg-mvc-product-mysql/src/main/java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     ust-product-app-mysql/src/main/java/com.ust.pms.repository&#x0D;&#x0A;     ust-product-app-mysql/src/main/java/com.ust.pms.Model&#x0D;&#x0A;     ust-product-app-mysql/src/main/java/com.ust.pms.service" description="Copy packages" destination="=ust-sprimg-mvc-product-mysql/src\/main\/java" element1="/src\/main\/java&lt;com.ust.pms.repository" element2="/src\/main\/java&lt;com.ust.pms.Model" element3="/src\/main\/java&lt;com.ust.pms.service" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1619374810488" version="1.0"/>
+</session>

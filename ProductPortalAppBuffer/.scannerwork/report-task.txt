@@ -1,0 +1,6 @@
+projectKey=productportalBuffer
+serverUrl=http://localhost:9000
+serverVersion=6.6.0.32724
+dashboardUrl=http://localhost:9000/dashboard/index/productportalBuffer
+ceTaskId=AXmdZgFS6-DqMuGPf6s7
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXmdZgFS6-DqMuGPf6s7

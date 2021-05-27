@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>The employee details entered by you is : </h2>
+
+<p th:text=" 'Employee id : ' + ${employee.employeeId} "/>
+<p th:text=" 'Employee Name : ' + ${employee.employeeName} " />
+
+<a href="employee">Home</a>
+</body>
+</html>

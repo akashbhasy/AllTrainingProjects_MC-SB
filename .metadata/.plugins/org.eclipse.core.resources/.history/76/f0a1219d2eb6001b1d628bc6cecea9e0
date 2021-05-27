@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+   <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View All Products in Cart</title>
+</head>
+<body>
+	<h3>Cart List</h3>
+	
+	
+	<table border="1" cellpadding="2" cellspacing="2">
+	
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>Update Cart</th>
+			<th>Delete Cart</th>
+		</tr>
+		<c:set var="total" value="${0}"/>
+		<c:forEach var="cart" items="${Carts }">
+			<tr>
+			<form:form  modelAttribute="Carts">
+				<td><input type="hidden" name="cart_ID"  value="${cart.cart_ID}"/>${cart.cart_ID }</td>
+				<td><input type="hidden"  name="item_Name" value="${cart.item_Name }"/>${cart.item_Name }</td>
+				<td><input type="hidden"  name="item_Price" value="${cart.item_Price }"  />${cart.item_Price }</td>
+				<td><input type="hidden"   value="${cart.item_Quantity }" >
+				<input type="text" name="item_Quantity" placeholder="${cart.item_Quantity }" ></td>
+				<td><input type="submit" class="fadeIn fourth" value="Upadte Cart" formaction="updateCart"></td>
+				<td><input type="submit" class="fadeIn fourth" value="Delete Cart" formaction="cart/deleteCart"></td>
+				 <c:set var="total" value="${total +cart.item_Price}" />
+</form:form>
+			</tr>
+			
+		</c:forEach>
+		<tr><td>Total Price: "${total}"  </td></tr>
+	</table>
+	
+	<h2>
+		<a href="index">Home</a>
+	</h2>
+
+</body>
+</html>

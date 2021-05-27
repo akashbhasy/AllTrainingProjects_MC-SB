@@ -1,0 +1,8 @@
+package com.ust.mailservice;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class MailService {
+
+}

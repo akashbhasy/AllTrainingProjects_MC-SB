@@ -1,0 +1,26 @@
+package com;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MycalculationsTest {
+	
+	Mycalculations mycalculations;
+
+	@Test
+	void testAddTwonumber() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSubTwonumber() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testMultTwonumber() {
+		fail("Not yet implemented");
+	}
+
+}

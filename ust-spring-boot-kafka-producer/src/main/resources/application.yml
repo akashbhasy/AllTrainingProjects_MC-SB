@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mvcust
+    username: root
+    password: root
+
+  jpa:
+   properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect 
+    generate-ddl: true
+server:
+  port: 8085
+kafka:
+ boot:
+  server: localhost:9092
+ topic: 
+  name: MycutomTopic         

@@ -1,0 +1,20 @@
+package com;
+
+public class Mycalculations {
+
+	public int addTwonumber(int a, int b) {
+
+		return a + b;
+	}
+
+	public int subTwonumber(int a, int b) {
+
+		return a - b;
+	}
+
+	public int multTwonumber(int a, int b) {
+
+		return a * b;
+	}
+
+}

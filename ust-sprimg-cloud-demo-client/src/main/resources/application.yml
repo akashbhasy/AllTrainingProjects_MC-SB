@@ -1,0 +1,7 @@
+spring:
+ application:
+  name: ust
+ profiles:
+  active: native
+server:  port: 8882  
+         
